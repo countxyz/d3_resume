@@ -6,6 +6,20 @@ svgHeight = -> height + margin.top + margin.bottom
 
 translation = -> "translate(" + margin.left + "," + margin.top + ")"
 
+collapse = (d) ->
+  if d.children
+    d._children = d.children
+    d._children.forEach collapse
+    d.children = null
+
+fixedDepth = (d) -> d.y = d.depth * 180
+
+updateNodes = (d) -> d.id || (d.id = ++i)
+
+appendName = (d) -> d.name
+
+targetLink = (d) -> d.target.id
+
 margin = { top: 20, right: 120, bottom: 20, left: 120 }
 width = 960 - margin.right - margin.left
 height = 800 - margin.top - margin.bottom
@@ -29,4 +43,73 @@ d3.json '/data/journey.json', (error, journey) ->
   root.y0 = 0
   root.children.forEach collapse
   update root
+  return
+
+d3.select(self.frameElement).style 'height', '800px'
+
+update = (source) ->  
+  nodes = tree.nodes(root).reverse()
+  links = tree.links(nodes)
+  
+  nodes.forEach(fixedDepth)
+
+  node = svg.selectAll('g.node').data(nodes, updateNodes)
+
+  nodeEnter = node.enter().append('g').attr('class', 'node')
+    .attr('transform', (d) -> "translate(" + source.y0 + "," + source.x0 + ")")
+    .on('click', click)
+
+  nodeEnter.append('circle').attr('r', 1e-6)
+    .style 'fill', (d) -> (if d._children then 'lightsteelblue' else '#fff')
+
+  nodeEnter.append('text')
+  .attr('x', (d) -> (if d.children or d._children then -10 else 10))
+  .attr('dy', '.35em')
+  .attr('text-anchor', (d) ->
+    (if d.children or d._children then 'end' else 'start'))
+  .text(appendName).style 'fill-opacity', 1e-6
+  
+  nodeUpdate = node.transition().duration(duration)
+  .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
+
+  nodeUpdate.select('circle').attr('r', 4.5).style 'fill', (d) ->
+    (if d._children then 'lightsteelblue' else '#fff')
+
+  nodeUpdate.select('text').style 'fill-opacity', 1
+  
+  nodeExit = node.exit().transition().duration(duration)
+    .attr('transform', (d) -> "translate(" + source.y + "," + source.x + ")")
+    .remove()
+
+  nodeExit.select('circle').attr 'r', 1e-6
+  
+  nodeExit.select('text').style 'fill-opacity', 1e-6
+  
+  link = svg.selectAll('path.link').data(links, targetLink)
+
+  link.enter().insert('path', 'g').attr('class', 'link').attr 'd', (d) ->
+    o = { x: source.x0, y: source.y0 }
+    diagonal({ source: o, target: o })
+
+  link.transition().duration(duration).attr 'd', diagonal
+  
+  link.exit().transition().duration(duration).attr('d', (d) ->
+    o = { x: source.x0, y: source.y0 }
+    diagonal({ source: o, target: o })).remove()
+
+  nodes.forEach eachNode
+
+click = (d) ->
+  if d.children
+    d._children = d.children
+    d.children = null
+  else
+    d.children = d._children
+    d._children = null
+  update d
+  return
+
+eachNode = (d) ->
+  d.x0 = d.x
+  d.y0 = d.y
   return
