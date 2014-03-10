@@ -1,0 +1,38 @@
+{
+ "name": "journey",
+ "children": [
+  {
+   "name": "Web Development",
+   "children": [
+    {
+     "name": "Employment",
+     "children": [
+      {"name": "Dynamo", "size": 743}
+     ]
+    },
+    {
+     "name": "Projects",
+     "children": [
+      {"name": "D3 Resume", "size": 3534},
+      {"name": "Harmonize", "size": 5731},
+      {"name": "New York State Constitution", "size": 7840},
+      {"name": "NYC Code Browser", "size": 5914},
+      {"name": "MastaMindz LLC", "size": 3416}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Network Engineering",
+   "children": [
+    {"name": "Exploration", "size": 17010}
+   ]
+  },
+  {
+   "name": "Network Security",
+   "children": [
+    {"name": "Exploration", "size": 1759}
+   ]
+  }
+ ]
+}
