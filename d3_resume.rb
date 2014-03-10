@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class D3Coffee < Sinatra::Base
+class D3Resume < Sinatra::Base
 
   get ('/') { erb :index }
 end
