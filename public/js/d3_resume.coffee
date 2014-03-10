@@ -20,6 +20,18 @@ appendName = (d) -> d.name
 
 targetLink = (d) -> d.target.id
 
+trans = (d) -> "translate(" + source.y0 + "," + source.x0 + ")"
+
+nodeFill = (d) -> if d._children then 'lightsteelblue' else '#fff'
+
+nodeAppend = (d) -> if d.children or d._children then -10 else 10
+
+nodeAnchor = (d) -> if d.children or d._children then 'end' else 'start'
+
+updateFill = (d) -> if d._children then 'lightsteelblue' else '#fff'
+
+newPosition = (d) -> "translate(" + source.y + "," + source.x + ")"
+
 margin = { top: 20, right: 120, bottom: 20, left: 120 }
 width = 960 - margin.right - margin.left
 height = 800 - margin.top - margin.bottom
@@ -59,21 +71,16 @@ update = (source) ->
     .attr('transform', (d) -> "translate(" + source.y0 + "," + source.x0 + ")")
     .on('click', click)
 
-  nodeEnter.append('circle').attr('r', 1e-6)
-    .style 'fill', (d) -> (if d._children then 'lightsteelblue' else '#fff')
+  nodeEnter.append('circle').attr('r', 1e-6).style 'fill', nodeFill
 
-  nodeEnter.append('text')
-  .attr('x', (d) -> (if d.children or d._children then -10 else 10))
-  .attr('dy', '.35em')
-  .attr('text-anchor', (d) ->
-    (if d.children or d._children then 'end' else 'start'))
+  nodeEnter.append('text').attr('x', nodeAppend)
+  .attr('dy', '.35em').attr('text-anchor', nodeAnchor)
   .text(appendName).style 'fill-opacity', 1e-6
   
   nodeUpdate = node.transition().duration(duration)
   .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
 
-  nodeUpdate.select('circle').attr('r', 4.5).style 'fill', (d) ->
-    (if d._children then 'lightsteelblue' else '#fff')
+  nodeUpdate.select('circle').attr('r', 4.5).style 'fill', updateFill
 
   nodeUpdate.select('text').style 'fill-opacity', 1
   
