@@ -2,7 +2,7 @@
 
 ## About
 
-My resume in D3
+My resume in D3 using coffeescript within the Sinatra framework.
 
 ## Start Hacking
 
