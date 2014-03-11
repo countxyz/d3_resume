@@ -7,25 +7,56 @@
     {
      "name": "Employment",
      "children": [
-      {"name": "Dynamo", "size": 743}
+      {
+        "name": "Dynamo",
+        "children": [
+          {"name": "Blue Bottle", "size": 100},
+          {"name": "Quaterly", "size": 100}
+        ]
+      }
      ]
     },
     {
      "name": "Projects",
      "children": [
-      {"name": "D3 Resume", "size": 3534},
-      {"name": "Harmonize", "size": 5731},
-      {"name": "New York State Constitution", "size": 7840},
-      {"name": "NYC Code Browser", "size": 5914},
-      {"name": "MastaMindz LLC", "size": 3416}
-     ]
+        {"name": "D3 Resume", "size": 3534},
+        {"name": "Harmonize", "size": 5731},
+        {"name": "New York State Constitution", "size": 7840},
+        {"name": "NYC Code Browser", "size": 5914},
+        {"name": "MastaMindz LLC", "size": 3416}
+      ]
     }
    ]
   },
   {
    "name": "Network Engineering",
    "children": [
-    {"name": "Exploration", "size": 17010}
+    {
+      "name": "Exploration",
+      "children": [
+      {
+        "name": "Protocols",
+        "children": [
+          {"name": "DNS", "size": 3534},
+          {"name": "DHCP", "size": 4141},
+          {"name": "ARP", "size": 3631},
+          {"name": "IPv4", "size": 4534},
+          {"name": "IPv6", "size": 4686},
+          {"name": "NAT/PAT", "size": 4851},
+          {"name": "WLAN", "size": 4992},
+          {"name": "VLAN", "size": 5136},
+          {"name": "STP", "size": 5283},
+          {"name": "RIPv2", "size": 5351},
+          {"name": "OSPF", "size": 5431},
+          {"name": "EIGRP", "size": 5476},
+          {"name": "ACL", "size": 5537},
+          {"name": "PPP", "size": 5643},
+          {"name": "WAN", "size": 5471},
+          {"name": "Frame Relay", "size": 5250}
+        ]
+      }
+     ]
+    }
    ]
   },
   {

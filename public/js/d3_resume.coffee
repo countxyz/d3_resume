@@ -12,7 +12,7 @@ collapse = (d) ->
     d._children.forEach collapse
     d.children = null
 
-fixedDepth = (d) -> d.y = d.depth * 180
+nodeSpacing = (d) -> d.y = d.depth * 180
 
 updateNodes = (d) -> d.id || (d.id = ++i)
 
@@ -63,7 +63,7 @@ update = (source) ->
   nodes = tree.nodes(root).reverse()
   links = tree.links(nodes)
   
-  nodes.forEach(fixedDepth)
+  nodes.forEach(nodeSpacing)
 
   node = svg.selectAll('g.node').data(nodes, updateNodes)
 
