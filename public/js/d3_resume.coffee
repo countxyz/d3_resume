@@ -45,8 +45,15 @@ tree = d3.layout.tree().size([height, width])
 diagonal = d3.svg.diagonal().projection(diagProj)
 
 svg = d3.select('body').append('svg')
-  .attr('width', svgWidth).attr('height', svgHeight).append('g')
-  .attr('transform', translation)
+    .attr('width', svgWidth)
+    .attr('height', svgHeight)
+  .append('g')
+    .attr('transform', translation)
+
+div = d3.select('body').append('div')
+  .attr('class', 'tooltip')
+  .style("opacity", 0)
+  .text('tooltip')
 
 d3.json '/data/journey.json', (error, journey) ->
   collapse
@@ -65,22 +72,38 @@ update = (source) ->
   
   nodes.forEach(nodeSpacing)
 
-  node = svg.selectAll('g.node').data(nodes, updateNodes)
+  node = svg.selectAll('g.node')
+    .data(nodes, updateNodes)
 
-  nodeEnter = node.enter().append('g').attr('class', 'node')
+  nodeEnter = node.enter().append('g')
+    .attr('class', 'node')
     .attr('transform', (d) -> "translate(" + source.y0 + "," + source.x0 + ")")
     .on('click', click)
+    .on('mouseover', (d) ->
+      div.transition()
+        .duration(200)
+        .style('opacity', .9)
+      div.html(d.description)
+        .style('left', (d3.event.pageX) + 'px')
+        .style('top', (d3.event.pageY - 28) + 'px'))
+    .on('mouseout', (d) ->
+      div.transition()
+        .duration(500)
+        .style('opacity', 0))
 
-  nodeEnter.append('circle').attr('r', 1e-6).style 'fill', nodeFill
+  nodeEnter.append('circle')
+    .attr('r', 1e-6)
+    .style 'fill', nodeFill
 
-  nodeEnter.append('text').attr('x', nodeAppend)
-  .attr('dy', '.35em').attr('text-anchor', nodeAnchor)
-  .text(appendName).style 'fill-opacity', 1e-6
-  
-# attack here
+  nodeEnter.append('text')
+    .attr('x', nodeAppend)
+    .attr('dy', '.35em')
+    .attr('text-anchor', nodeAnchor)
+    .text(appendName)
+    .style 'fill-opacity', 1e-6
 
   nodeUpdate = node.transition().duration(duration)
-  .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
+    .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
 
   nodeUpdate.select('circle').attr('r', 4.5).style 'fill', updateFill
 
@@ -106,7 +129,10 @@ update = (source) ->
     o = { x: source.x0, y: source.y0 }
     diagonal({ source: o, target: o })).remove()
 
-  nodes.forEach eachNode
+  nodes.forEach (d) ->
+    d.x0 = d.x
+    d.y0 = d.y
+    return
 
 click = (d) ->
   if d.children
@@ -116,9 +142,4 @@ click = (d) ->
     d.children = d._children
     d._children = null
   update d
-  return
-
-eachNode = (d) ->
-  d.x0 = d.x
-  d.y0 = d.y
   return

@@ -14,7 +14,7 @@
   stroke-width: 1.5px;
 }
 
-section.tooltip {
+div.tooltip {
   position: absolute;
   text-align: center;
   width: 60px;

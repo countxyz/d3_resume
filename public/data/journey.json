@@ -10,7 +10,7 @@
       {
         "name": "Dynamo",
         "children": [
-          {"name": "Blue Bottle"},
+          {"name": "Blue Bottle", "description": "hover"},
           {"name": "Quaterly"}
         ]
       }
