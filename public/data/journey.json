@@ -10,8 +10,8 @@
       {
         "name": "Dynamo",
         "children": [
-          {"name": "Blue Bottle", "size": 100},
-          {"name": "Quaterly", "size": 100}
+          {"name": "Blue Bottle"},
+          {"name": "Quaterly"}
         ]
       }
      ]
@@ -19,11 +19,11 @@
     {
      "name": "Projects",
      "children": [
-        {"name": "D3 Resume", "size": 3534},
-        {"name": "Harmonize", "size": 5731},
-        {"name": "New York State Constitution", "size": 7840},
-        {"name": "NYC Code Browser", "size": 5914},
-        {"name": "MastaMindz LLC", "size": 3416}
+        {"name": "D3 Resume"},
+        {"name": "Harmonize"},
+        {"name": "New York State Constitution"},
+        {"name": "NYC Code Browser"},
+        {"name": "MastaMindz LLC"}
       ]
     }
    ]
@@ -37,22 +37,22 @@
       {
         "name": "Protocols",
         "children": [
-          {"name": "DNS", "size": 3534},
-          {"name": "DHCP", "size": 4141},
-          {"name": "ARP", "size": 3631},
-          {"name": "IPv4", "size": 4534},
-          {"name": "IPv6", "size": 4686},
-          {"name": "NAT/PAT", "size": 4851},
-          {"name": "WLAN", "size": 4992},
-          {"name": "VLAN", "size": 5136},
-          {"name": "STP", "size": 5283},
-          {"name": "RIPv2", "size": 5351},
-          {"name": "OSPF", "size": 5431},
-          {"name": "EIGRP", "size": 5476},
-          {"name": "ACL", "size": 5537},
-          {"name": "PPP", "size": 5643},
-          {"name": "WAN", "size": 5471},
-          {"name": "Frame Relay", "size": 5250}
+          {"name": "DNS"},
+          {"name": "DHCP"},
+          {"name": "ARP"},
+          {"name": "IPv4"},
+          {"name": "IPv6"},
+          {"name": "NAT/PAT"},
+          {"name": "WLAN"},
+          {"name": "VLAN"},
+          {"name": "STP"},
+          {"name": "RIPv2"},
+          {"name": "OSPF"},
+          {"name": "EIGRP"},
+          {"name": "ACL"},
+          {"name": "PPP"},
+          {"name": "WAN"},
+          {"name": "Frame Relay"}
         ]
       }
      ]
@@ -62,7 +62,7 @@
   {
    "name": "Network Security",
    "children": [
-    {"name": "Exploration", "size": 1759}
+    {"name": "Exploration"}
    ]
   }
  ]

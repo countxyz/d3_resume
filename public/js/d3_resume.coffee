@@ -77,6 +77,8 @@ update = (source) ->
   .attr('dy', '.35em').attr('text-anchor', nodeAnchor)
   .text(appendName).style 'fill-opacity', 1e-6
   
+# attack here
+
   nodeUpdate = node.transition().duration(duration)
   .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
 
