@@ -80,16 +80,17 @@ update = (source) ->
     .attr('transform', (d) -> "translate(" + source.y0 + "," + source.x0 + ")")
     .on('click', click)
     .on('mouseover', (d) ->
-      div.transition()
-        .duration(200)
-        .style('opacity', .9)
-      div.html(d.description)
-        .style('left', (d3.event.pageX) + 'px')
-        .style('top', (d3.event.pageY - 28) + 'px'))
-    .on('mouseout', (d) ->
-      div.transition()
-        .duration(500)
-        .style('opacity', 0))
+      if d.description
+        div.transition()
+          .duration(200)
+          .style('opacity', .9)
+        div.html(d.description)
+          .style('left', (d3.event.pageX) + 'px')
+          .style('top', (d3.event.pageY - 28) + 'px'))
+      .on('mouseout', (d) ->
+        div.transition()
+          .duration(500)
+          .style('opacity', 0))
 
   nodeEnter.append('circle')
     .attr('r', 1e-6)
