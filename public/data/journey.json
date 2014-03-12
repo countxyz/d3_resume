@@ -20,8 +20,8 @@
           {
             "name": "Summary",
             "value": 8,
-            "company": "Dynamo - Montreal, CAN",
-            "dates": "Ruby Engineer - Jan - Feb 2014",
+            "heading": "Dynamo - Montreal, CAN",
+            "subheading": "Ruby Engineer - Jan - Feb 2014",
             "description": "Worked throughout January and February helping out with their backlogs. I worked primarily on two Spree apps: Blue Bottle Coffee and Quarterly. Some of the major issues that I worked on was providing site admins the ability to manage customer credit cards, manage addresses to paid subscriptions, and provide various reports regarding product performance. I also helped with various troubleshooting issues regarding front-end functionality.",
             "fill": "#00A1CB"
           },
@@ -47,26 +47,41 @@
         {
           "name": "D3 Resume",
           "value": 7,
+          "heading": "d3-resume.herokuapp.com",
+          "subheading": "March 2014",
+          "description": "You're looking at it! Built with Sinatra, D3.js, and coffeescript",
           "fill": "#00A1CB"
         },
         {
           "name": "Harmonize",
+          "heading": "harmonize.herokuapp.com",
+          "subheading": "November 2013 - January 2014",
+          "description": "A CRM (Client Relations Manager) that aims to help freelancers manage projects, contacts, and leads. Built on Rails 4 and Postgres using Haml, SASS, CoffeeScript, and jQuery for front-end support.",
           "value": 8,
           "fill": "#00A1CB"
         },
         {
           "name": "New York State Constitution",
           "value": 4,
+          "heading": "nys-constitution.herokuapp.com/",
+          "subheading": "October 2013",
+          "description": "App for the New York State Constitution that aims to provide a better reading experience and that is easier to navigate over its state funded counterpart. App served the purpose to improve front-end skills and provided an opportunity to move away from CSS frameworks. Focused on developing a better sense of how elements should be spaced out and how typography can be used to provide a more enjoyable reading experience.",
           "fill": "#00A1CB"
         },
         {
           "name": "NYC Code Browser",
           "value": 6,
+          "heading": "github.com/countxyz/nyc_code_browser",
+          "subheading": "July 2013 – September 2013",
+          "description": "Provides a new data visualization interface to ease user navigation of 30,000 laws from the New York City Administrative Code site. Browser inspired by the Open Law DC project. Created 2 JSONifiers, using Nokogiri, that were responsible for crawling and scraping administrative code site. Project used to learn Javascript, jQuery, D3.js, node.js, and AngularJS. Project was put on halt considering that I was the sole contributor and that it was keeping me away from Rails development.",
           "fill": "#00A1CB"
         },
         {
           "name": "MastaMindz LLC",
           "value": 6,
+          "heading": "www.mastamindzllc.com",
+          "subheading": "May 2013 – June 2013",
+          "description": "Built site to incorporate modern web design, functionality, and user interaction. Built with Rails 4 with a responsive UI using Zurb Foundation 4. Consultation & implementation on new web infrastructure, domain name service, and hosting. Consulted owners regarding site operations, increasing site traffic, and improving marketing performance",
           "fill": "#00A1CB"
         }
       ]
@@ -83,6 +98,14 @@
       "value": 5,
       "fill": "#74C476",
       "children": [
+      {
+        "name": "Summary",
+        "value": 5,
+        "heading": "Network Engineering - Research",
+        "subheading": "2012",
+        "description": "Learning and exploring network engineering as a hobbyist. Used software such as Cisco Packet Tracer and GNS3 to explore different versions of Cisco IOS and as a platform to execute proof-of-concept work. Software was also used for network design. Learned to use wireshark for techniques such as port mirroring (tapping the wire) and to troubleshoot common enterprise network failure with a focus on DNS.",
+        "fill": "#74C476"
+      },
       {
         "name": "Protocols",
         "value": 5,
@@ -182,7 +205,57 @@
       {
         "name": "Exploration",
         "value": 5,
-        "fill": "#9E9AC8"
+        "fill": "#9E9AC8",
+        "children": [
+        {
+          "name": "Summary",
+          "value": 5,
+          "heading": "Network Security / Hardware Hacking / Linux",
+          "subheading": "2006 - 2010",
+          "description": "Began to take my interest in computer sciences seriously and was fascinated on making computers do things they were not intended to do.",
+          "fill": "#9E9AC8"
+        },
+        {
+          "name": "First Hack",
+          "value": 7,
+          "heading": "First Hack",
+          "subheading": "2006",
+          "description": "Hacked Playstation 3 and implemented a dual boot with Fedora 3.",
+          "fill": "#9E9AC8"
+        },
+        {
+          "name": "Wireless",
+          "value": 6,
+          "heading": "WEP, WPA, WPA2",
+          "subheading": "2006 - 2010",
+          "description": "Began using software such as Aircrack-ng, Kismet, John the Ripper, rainbow tables, and wireshark to penetrate WEP, WPA, and WPA2 networks.",
+          "fill": "#9E9AC8"
+        },
+        {
+          "name": "Port Scanning",
+          "value": 5,
+          "heading": "Port Scanning",
+          "subheading": "2008 - 2010",
+          "description": "Learned port scanning with Nmap to detect vulnerabilities while limiting my digital footprint on the network.",
+          "fill": "#9E9AC8"
+        },
+        {
+          "name": "Languages",
+          "value": 5,
+          "heading": "ASM & Perl",
+          "subheading": "2006 - 2008",
+          "description": "Used ASM to write shell scripts and deliver payloads with Perl with the aim of gaining complete system control of Windows XP and 7.",
+          "fill": "#9E9AC8"
+        },
+        {
+          "name": "System Administration",
+          "value": 6,
+          "heading": "Linux, MAC, Windows",
+          "subheading": "2006 - 2010",
+          "description": "Learned basic System Administration skills by having to set up various OS environments and at certain patch levels.",
+          "fill": "#9E9AC8"
+        }
+        ]
       }
    ]
   }
