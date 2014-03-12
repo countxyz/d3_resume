@@ -11,18 +11,20 @@
 .link {
   fill: none;
   stroke: #ccc;
-  stroke-width: 1.5px;
+  stroke-width: 2px;
 }
 
 div.tooltip {
   position: absolute;
-  text-align: center;
-  width: 60px;
-  height: 28px;
-  padding: 2px;
-  font: 12px sans-serif;
-  background: lightsteelblue;
-  border: 0px;
+  max-width: 250px;
+  max-height: 200px;
+  padding: 5px;
+  font: 12px helvetica;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  background: #CEE3F8;
+  border: 1px solid black;
   border-radius: 8px;
+  box-shadow: 4px 6px 8px rgba(0,0,0,.75);
   pointer-events: none;
 }

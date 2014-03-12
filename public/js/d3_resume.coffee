@@ -12,7 +12,7 @@ collapse = (d) ->
     d._children.forEach collapse
     d.children = null
 
-nodeSpacing = (d) -> d.y = d.depth * 180
+nodeSpacing = (d) -> d.y = d.depth * 160
 
 updateNodes = (d) -> d.id || (d.id = ++i)
 
@@ -22,18 +22,21 @@ targetLink = (d) -> d.target.id
 
 trans = (d) -> "translate(" + source.y0 + "," + source.x0 + ")"
 
+nodeSize = (d) -> if d.value then d.value else 5
+
 nodeFill = (d) -> if d._children then 'lightsteelblue' else '#fff'
 
-nodeAppend = (d) -> if d.children or d._children then -10 else 10
+nodeAppend = (d) ->
+  if d.children or d._children then (d.value + 4) * -1 else d.value + 4
 
 nodeAnchor = (d) -> if d.children or d._children then 'end' else 'start'
 
-updateFill = (d) -> if d._children then 'lightsteelblue' else '#fff'
+updateFill = (d) -> if d.fill then d.fill else '#fff'
 
 newPosition = (d) -> "translate(" + source.y + "," + source.x + ")"
 
-margin = { top: 20, right: 120, bottom: 20, left: 120 }
-width = 960 - margin.right - margin.left
+margin = { top: 20, right: 80, bottom: 20, left: 80 }
+width = 1050 - margin.right - margin.left
 height = 800 - margin.top - margin.bottom
 
 i = 0
@@ -79,18 +82,17 @@ update = (source) ->
     .attr('class', 'node')
     .attr('transform', (d) -> "translate(" + source.y0 + "," + source.x0 + ")")
     .on('click', click)
-    .on('mouseover', (d) ->
-      if d.description
-        div.transition()
-          .duration(200)
-          .style('opacity', .9)
-        div.html(d.description)
-          .style('left', (d3.event.pageX) + 'px')
-          .style('top', (d3.event.pageY - 28) + 'px'))
-      .on('mouseout', (d) ->
-        div.transition()
-          .duration(500)
-          .style('opacity', 0))
+    .on('mouseover', (d) -> if d.description
+      div.transition()
+        .duration(200)
+        .style('opacity', 1)
+      div.html(d.description)
+        .style('left', (d3.event.pageX + 100) + 'px')
+        .style('top', (d3.event.pageY - 35) + 'px'))
+    .on('mouseout', (d) ->
+      div.transition()
+        .duration(500)
+        .style('opacity', 0))
 
   nodeEnter.append('circle')
     .attr('r', 1e-6)
@@ -106,7 +108,9 @@ update = (source) ->
   nodeUpdate = node.transition().duration(duration)
     .attr('transform', (d) -> "translate(" + d.y + "," + d.x + ")")
 
-  nodeUpdate.select('circle').attr('r', 4.5).style 'fill', updateFill
+  nodeUpdate.select('circle')
+    .attr('r', nodeSize)
+    .style 'fill', updateFill
 
   nodeUpdate.select('text').style 'fill-opacity', 1
   

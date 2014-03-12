@@ -1,58 +1,179 @@
 {
  "name": "journey",
+ "value": 5,
  "children": [
   {
    "name": "Web Development",
+   "value": 10,
+   "fill": "#00A1CB",
    "children": [
     {
      "name": "Employment",
+     "value": 5,
+     "fill": "#00A1CB",
      "children": [
       {
         "name": "Dynamo",
+        "value": 6,
+        "fill": "#00A1CB",
         "children": [
-          {"name": "Blue Bottle", "description": "hover"},
-          {"name": "Quaterly", "description": "hover"}
+          {
+            "name": "About Dynamo",
+            "value": 5,
+            "description": "godynamo.com",
+            "fill": "#00A1CB"
+          },
+          {
+            "name": "Summary",
+            "value": 8,
+            "description": "Worked throughout January and February helping out with their backlogs. I worked primarily on two Spree apps: Blue Bottle Coffee and Quarterly. Some of the major issues that I worked on was providing site admins the ability to manage customer credit cards, manage addresses to paid subscriptions, and provide various reports regarding product performance. I also helped with various troubleshooting issues regarding front-end functionality.",
+            "fill": "#00A1CB"
+          },
+          {
+            "name": "Blue Bottle Coffee",
+            "value": 6,
+            "description": "bluebottlecoffee.com",
+            "fill": "#00A1CB"
+          },
+          {
+            "name": "Quaterly",
+            "value": 5,
+            "description": "quarterly.co",
+            "fill": "#00A1CB"
+          }
         ]
       }
      ]
     },
     {
      "name": "Projects",
+     "value": 5,
+     "fill": "#00A1CB",
      "children": [
-        {"name": "D3 Resume"},
-        {"name": "Harmonize"},
-        {"name": "New York State Constitution"},
-        {"name": "NYC Code Browser"},
-        {"name": "MastaMindz LLC"}
+        {
+          "name": "D3 Resume",
+          "value": 7,
+          "fill": "#00A1CB"
+        },
+        {
+          "name": "Harmonize",
+          "value": 8,
+          "fill": "#00A1CB"
+        },
+        {
+          "name": "New York State Constitution",
+          "value": 4,
+          "fill": "#00A1CB"
+        },
+        {
+          "name": "NYC Code Browser",
+          "value": 6,
+          "fill": "#00A1CB"
+        },
+        {
+          "name": "MastaMindz LLC",
+          "value": 6,
+          "fill": "#00A1CB"
+        }
       ]
     }
    ]
   },
   {
    "name": "Network Engineering",
+   "value": 5,
+   "fill": "#74C476",
    "children": [
     {
       "name": "Exploration",
+      "value": 5,
+      "fill": "#74C476",
       "children": [
       {
         "name": "Protocols",
+        "value": 5,
+        "fill": "#74C476",
         "children": [
-          {"name": "DNS"},
-          {"name": "DHCP"},
-          {"name": "ARP"},
-          {"name": "IPv4"},
-          {"name": "IPv6"},
-          {"name": "NAT/PAT"},
-          {"name": "WLAN"},
-          {"name": "VLAN"},
-          {"name": "STP"},
-          {"name": "RIPv2"},
-          {"name": "OSPF"},
-          {"name": "EIGRP"},
-          {"name": "ACL"},
-          {"name": "PPP"},
-          {"name": "WAN"},
-          {"name": "Frame Relay"}
+          {
+            "name": "DNS",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "DHCP",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "ARP",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "IPv4",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "IPv6",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "NAT/PAT",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "WLAN",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "VLAN",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "STP",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "RIPv2",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "OSPF",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "EIGRP",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "ACL",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "PPP",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "WAN",
+            "value": 5,
+            "fill": "#74C476"
+          },
+          {
+            "name": "Frame Relay",
+            "value": 5,
+            "fill": "#74C476"
+          }
         ]
       }
      ]
@@ -61,8 +182,14 @@
   },
   {
    "name": "Network Security",
+   "value": 5,
+   "fill": "#9E9AC8",
    "children": [
-    {"name": "Exploration"}
+      {
+        "name": "Exploration",
+        "value": 5,
+        "fill": "#9E9AC8"
+      }
    ]
   }
  ]
