@@ -16,15 +16,17 @@
 
 div.tooltip {
   position: absolute;
-  max-width: 250px;
+  max-width: 300px;
   max-height: 200px;
-  padding: 5px;
+  padding: 10px;
   font: 12px helvetica;
   letter-spacing: 1px;
-  line-height: 1.1;
+  line-height: 1.2;
   background: #CEE3F8;
   border: 1px solid black;
   border-radius: 8px;
   box-shadow: 4px 6px 8px rgba(0,0,0,.75);
   pointer-events: none;
 }
+
+span { font-weight: bold; }
