@@ -30,3 +30,24 @@ div.tooltip {
 }
 
 span { font-weight: bold; }
+
+header {
+  padding-right: 100px;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  text-align: right;
+  font-family: Arial, Helvetica;
+}
+
+ul li a { text-decoration: none; }
+
+ul li { display: inline; }
+
+a { color: #00A1CB; }
+
+ul {
+  text-align: right;
+  list-style: none;
+}
