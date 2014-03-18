@@ -27,13 +27,11 @@
           },
           {
             "name": "Blue Bottle Coffee",
-            "value": 6,
-            "fill": "#00A1CB"
+            "value": 6
           },
           {
             "name": "Quaterly",
-            "value": 5,
-            "fill": "#00A1CB"
+            "value": 5
           }
         ]
       }
@@ -113,83 +111,67 @@
         "children": [
           {
             "name": "DNS",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "DHCP",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "ARP",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "IPv4",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "IPv6",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "NAT/PAT",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "WLAN",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "VLAN",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "STP",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "RIPv2",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "OSPF",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "EIGRP",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "ACL",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "PPP",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "WAN",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           },
           {
             "name": "Frame Relay",
-            "value": 5,
-            "fill": "#74C476"
+            "value": 5
           }
         ]
       }
