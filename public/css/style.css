@@ -53,3 +53,9 @@ ul {
   text-align: right;
   list-style: none;
 }
+
+footer {
+  margin-bottom: 15px;
+  border-top: 1px solid black;
+  text-align: center;
+}
