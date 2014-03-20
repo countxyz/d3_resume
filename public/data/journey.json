@@ -71,7 +71,7 @@
           "value": 6,
           "heading": "github.com/countxyz/nyc_code_browser",
           "subheading": "July 2013 – September 2013",
-          "description": "Provides a new data visualization interface to ease user navigation of 30,000 laws from the New York City Administrative Code site. Browser inspired by the Open Law DC project. Created 2 JSONifiers, using Nokogiri, that were responsible for crawling and scraping administrative code site. Project used to learn Javascript, jQuery, D3.js, node.js, and AngularJS. Project was put on halt considering that I was the sole contributor and that it was keeping me away from Rails development.",
+          "description": "Provides a new data visualization interface to ease user navigation of 30,000 laws from the New York City Administrative Code site. Browser inspired by the Open Law DC project. Created 2 JSONifiers, using Nokogiri, that were responsible for crawling and scraping administrative code site. Project used to learn Javascript, jQuery, D3.js, node.js, and AngularJS.",
           "fill": "#00A1CB"
         },
         {
