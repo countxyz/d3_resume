@@ -21,7 +21,7 @@
             "name": "Summary",
             "value": 6,
             "heading": "iVVi Publishing - Bryn Mawr, PA",
-            "subheading": "Ruby Engineer - Jan - Feb 2014",
+            "subheading": "Ruby Engineer - April 2014",
             "description": "Completed phase 1 of the beta-invite landing page. I was given a psd and was asked to start building a Rails app using Bootstrap 3, Postgresql, and Heroku. This phase also required that I setup the db for the beta-list and provide the ability to grant permission for beta-invites.",
             "fill": "#00A1CB"
           },
@@ -72,7 +72,7 @@
         {
           "name": "Harmonize",
           "heading": "harmonize.herokuapp.com",
-          "subheading": "November 2013 - January 2014",
+          "subheading": "November 2013 - Current",
           "description": "A CRM (Client Relations Manager) that aims to help freelancers manage projects, contacts, and leads. Built on Rails 4 and Postgres using Haml, SASS, CoffeeScript, and jQuery for front-end support.",
           "value": 8,
           "fill": "#00A1CB"
