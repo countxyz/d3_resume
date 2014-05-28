@@ -72,7 +72,7 @@
         {
           "name": "Rails FullCalendar 2",
           "value": 8,
-          "heading": "d3-resume.herokuapp.com",
+          "heading": "rails-fullcal2-bs3.herokuapp.com",
           "subheading": "May 2014",
           "description": "This is an app implementing Adam Shaw's new FullCalendar 2 in Rails. The goal of this app is to provide the community with an implementation that follows Rails conventions and is easy to implement. In other words, I want to provide a reliable options for Rails devs who need an interactive calendar but are afraid of Javascript.",
           "fill": "#00A1CB"
