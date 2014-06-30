@@ -13,6 +13,25 @@
      "fill": "#00A1CB",
      "children": [
       {
+        "name": "Setapick Labs",
+        "value": 5,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 5,
+            "heading": "Setapick Labs - Atlanta, GA",
+            "subheading": "Technical Writing - June 2014 - Current",
+            "description": "Writing blog posts for Setapick Lab's Tealeaf Academy Blog. Posts consist of comprehensive coverage of Rail's topics for beginners.",
+            "fill": "#00A1CB"
+          },
+          {
+            "name": "The Detailed Guide on How Ajax Works With Ruby on Rails",
+            "value": 5
+          }
+        ]
+      },
+      {
         "name": "iVVi Publishing & Media LLC",
         "value": 5,
         "fill": "#00A1CB",
