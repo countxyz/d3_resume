@@ -84,7 +84,7 @@
           "name": "Nested Accordion Survey",
           "value": 7,
           "heading": "nested-accordion-survey.herokuapp.com",
-          "subheading": "Current",
+          "subheading": "June 2014",
           "description": "A Rails single page survey demo aiming to provide an intuitive, simple, yet dynamic interface whilst displaying complex nested hierarchical data at a glance.",
           "fill": "#00A1CB"
         },
