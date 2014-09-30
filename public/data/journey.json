@@ -8,10 +8,25 @@
    "fill": "#00A1CB",
    "children": [
     {
-     "name": "Employment",
+     "name": "Experience",
      "value": 5,
      "fill": "#00A1CB",
      "children": [
+      {
+        "name": "Seeds",
+        "value": 8,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 8,
+            "heading": "San Mateo, CA / Brooklyn, NY",
+            "subheading": "Lead Developer - August 2014 - Current",
+            "description": "Building analytics system that tracks user interaction in iOS apps. System built with Rails; Redis used for metrics; and Grape used for api. Dashboard on front-end built with Bootstrap 3. Implementing interstitial ads for app that we are partnered with. Ad implementation requiring no SDK, external dependencies, and as little code as possible.",
+            "fill": "#00A1CB"
+          }
+        ]
+      },
       {
         "name": "Setapick Labs",
         "value": 5,
@@ -21,7 +36,7 @@
             "name": "Summary",
             "value": 5,
             "heading": "Setapick Labs - Atlanta, GA",
-            "subheading": "Technical Writing - June 2014 - Current",
+            "subheading": "Technical Writing - June 2014 - August 2014",
             "description": "Writing blog posts for Setapick Lab's Tealeaf Academy Blog. Posts consist of comprehensive coverage of Rail's topics for beginners.",
             "fill": "#00A1CB"
           },
