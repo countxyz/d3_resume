@@ -13,6 +13,25 @@
      "fill": "#00A1CB",
      "children": [
       {
+        "name": "Hashrabbit",
+        "value": 10,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 10,
+            "heading": "San Mateo, CA",
+            "subheading": "Full Stack Web Developer - October 2014 - Current",
+            "description": "Building analytics and monitoring system for Bitcoin mining rigs. Using Rails 4.1 with PostgreSQL for relational data and InfluxDB for time series data. Built a hypermedia api with grape to interact with firmware. On the front-end, Ember used with D3 to provide charts along with Bourbon and Neat to provide styling.",
+            "fill": "#00A1CB"
+          },
+          {
+            "name": "hashrabbit.co",
+            "value": 10
+          }
+        ]
+      },
+      {
         "name": "Seeds",
         "value": 8,
         "fill": "#00A1CB",
@@ -21,10 +40,14 @@
             "name": "Summary",
             "value": 8,
             "heading": "San Mateo, CA / Brooklyn, NY",
-            "subheading": "Lead Developer - August 2014 - Current",
+            "subheading": "Full Stack Web/iOS Developer - August 2014 - October 2014",
             "description": "Building analytics system that tracks user interaction in iOS apps. System built with Rails; Redis used for metrics; and Grape used for api. Dashboard on front-end built with Bootstrap 3. Implementing interstitial ads for app that we are partnered with. Ad implementation requiring no SDK, external dependencies, and as little code as possible.",
             "fill": "#00A1CB"
-          }
+          },
+          {
+            "name": "playseeds.com",
+            "value": 8
+          }          
         ]
       },
       {
@@ -36,9 +59,13 @@
             "name": "Summary",
             "value": 5,
             "heading": "Setapick Labs - Atlanta, GA",
-            "subheading": "Technical Writing - June 2014 - August 2014",
+            "subheading": "Technical Writer - June 2014 - August 2014",
             "description": "Writing blog posts for Setapick Lab's Tealeaf Academy Blog. Posts consist of comprehensive coverage of Rail's topics for beginners.",
             "fill": "#00A1CB"
+          },
+          {
+            "name": "gotoleaf.com",
+            "value": 5
           },
           {
             "name": "The Detailed Guide on How Ajax Works With Ruby on Rails",
@@ -55,7 +82,7 @@
             "name": "Summary",
             "value": 6,
             "heading": "iVVi Publishing - Bryn Mawr, PA",
-            "subheading": "Front-end Developer - April 2014",
+            "subheading": "Front-end Web Developer - April 2014",
             "description": "Completed phase 1 of the beta-invite landing page. I was given a psd and was asked to start building a Rails app using Bootstrap 3, Postgresql, and Heroku. This phase also required that I setup the db for the beta-list and provide the ability to grant permission for beta-invites.",
             "fill": "#00A1CB"
           },
@@ -77,6 +104,10 @@
             "subheading": "Ruby Engineer - Jan - Feb 2014",
             "description": "Worked throughout January and February helping out with their backlogs. I worked primarily on two Spree apps: Blue Bottle Coffee and Quarterly. Some of the major issues that I worked on was providing site admins the ability to manage customer credit cards, manage addresses to paid subscriptions, and provide various reports regarding product performance. I also helped with various troubleshooting issues regarding front-end functionality.",
             "fill": "#00A1CB"
+          },
+          {
+            "name": "godynamo.com",
+            "value": 5
           },
           {
             "name": "Blue Bottle Coffee",
