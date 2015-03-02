@@ -16,7 +16,7 @@ Navigate to http://127.0.0.1:9393
 
 ## License
 
-Copyright (C) 2014 Efren Aguirre <skeptoid@gmail.com>
+Copyright (C) 2014 - 2015 Efren Aguirre <skeptoid@gmail.com>
 
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
