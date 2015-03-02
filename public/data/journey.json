@@ -13,6 +13,21 @@
      "fill": "#00A1CB",
      "children": [
       {
+        "name": "Inksy",
+        "value": 7,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 7,
+            "heading": "New York, NY",
+            "subheading": "Full Stack Web Developer - January 2015 - March 2015",
+            "description": "Building ecommerce app for customized merchandise. Using Rails 4.2 with PostgreSQL for back-end while using Angular on the front-end for custom design tool. Custom design tool originally implemented for apache, mysql, and php, but was modified to be implemented with current rails app being built. Bourbon neat, sass, coffeescript, and javascript being the other main components used for the front-end.",
+            "fill": "#00A1CB"
+          }
+        ]
+      },
+      {
         "name": "Hashrabbit",
         "value": 10,
         "fill": "#00A1CB",
@@ -21,7 +36,7 @@
             "name": "Summary",
             "value": 10,
             "heading": "San Mateo, CA",
-            "subheading": "Full Stack Web Developer - October 2014 - Current",
+            "subheading": "Full Stack Web Developer - October 2014 - December 2014",
             "description": "Building analytics and monitoring system for Bitcoin mining rigs. Using Rails 4.1 with PostgreSQL for relational data and InfluxDB for time series data. Built a hypermedia api with grape to interact with firmware. On the front-end, Ember used with D3 to provide charts along with Bourbon and Neat to provide styling.",
             "fill": "#00A1CB"
           },
