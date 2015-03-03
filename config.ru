@@ -1,5 +1,5 @@
 require 'rack/coffee'
-require './d3_resume'
+require './app'
 
 use Rack::Coffee, root: 'public', urls: '/js'
 
