@@ -14,18 +14,11 @@ GEM
     coffee-script-source (1.8.0)
     diff-lcs (1.2.5)
     execjs (2.2.2)
-    jasmine (2.2.0)
-      jasmine-core (~> 2.2)
-      phantomjs
-      rack (>= 1.2.1)
-      rake
-    jasmine-core (2.2.0)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     multi_json (1.10.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    phantomjs (1.9.8.0)
     poltergeist (1.6.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -44,7 +37,6 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
-    rake (10.4.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -76,7 +68,6 @@ PLATFORMS
 
 DEPENDENCIES
   capybara (~> 2.4.4)
-  jasmine (~> 2.2.0)
   poltergeist (~> 1.6.0)
   rack-coffee (~> 1.0.3)
   rails_12factor (~> 0.0.3)
