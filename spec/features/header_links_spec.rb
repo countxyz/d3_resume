@@ -32,7 +32,11 @@ RSpec.describe 'Header Links', js: true do
     click_link 'MastaMindz'
   end
 
-  it "has 'MastaMindz' link" do
+  it "has 'GitHub' link" do
     click_link 'GitHub'
+  end
+
+  it "has 'The Detailed Guide on How Ajax Works With Ruby on Rails' link" do
+    click_link 'The Detailed Guide on How Ajax Works With Ruby on Rails'
   end
 end
