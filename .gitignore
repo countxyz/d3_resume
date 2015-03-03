@@ -1,3 +1,14 @@
-*~
+*.bak
 *.swp
-/.bundle
+*~
+._*
+.directory
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+ehthumbs.db
+
+Thumbs.db
+tmp
