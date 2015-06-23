@@ -13,6 +13,21 @@
      "fill": "#00A1CB",
      "children": [
       {
+        "name": "DreamItReel",
+        "value": 6,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 6,
+            "heading": "New York, NY",
+            "subheading": "Full Stack Web Developer - May 2015 – June 2015",
+            "description": "Implemented new landing page, fully equipped with mobile responsiveness thanks to Bourbon, Neat, and Flexbox and also addressed other cross-browser issues that were affecting the app. Refactored portions of the site that were underperforming and implemented new checkout process with stripe. Due to increased traffic, consulted scaling options with Heroku.",
+            "fill": "#00A1CB"
+          }
+        ]
+      },
+      {
         "name": "Inksy",
         "value": 7,
         "fill": "#00A1CB",
@@ -62,7 +77,7 @@
           {
             "name": "playseeds.com",
             "value": 8
-          }          
+          }
         ]
       },
       {
