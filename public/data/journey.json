@@ -9,9 +9,24 @@
    "children": [
     {
      "name": "Experience",
-     "value": 5,
+     "value": 8,
      "fill": "#00A1CB",
      "children": [
+      {
+        "name": "Teepublic",
+        "value": 10,
+        "fill": "#00A1CB",
+        "children": [
+          {
+            "name": "Summary",
+            "value": 10,
+            "heading": "New York, NY",
+            "subheading": "Senior Engineer - June 2015 – Current",
+            "description": "Core responsibilities consists of back-end development, working with elasticsearch, debugging site issues, and seo. Features and site improvements that I was responsible for: building merchandise filters and rebuilding search components integrated with elasticsearch, Rails 4 transition, coupon system, building an API with Grape. Additionally, I contributed to site optimizations, test suite refactoring, partner integration, and managing app services.",
+            "fill": "#00A1CB"
+          }
+        ]
+      },
       {
         "name": "DreamItReel",
         "value": 6,

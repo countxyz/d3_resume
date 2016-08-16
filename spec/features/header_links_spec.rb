@@ -3,9 +3,9 @@ require 'spec_helper'
 RSpec.describe 'Header Links', js: true do
   before { visit '/' }
   after  { within_window(windows.last){ expect(page).to be } }
-  
-  it "has 'Nested Accordion Survey' link" do
-    click_link 'Nested Accordion Survey'
+
+  it "has 'Teepublic' link" do
+    click_link 'Teepublic'
   end
 
   it "has 'Rails FullCalendar 2' link" do
@@ -22,14 +22,6 @@ RSpec.describe 'Header Links', js: true do
 
   it "has 'Quarterly' link" do
     click_link 'Quarterly'
-  end
-
-  it "has 'NYS Constitution' link" do
-    click_link 'NYS Constitution'
-  end
-
-  it "has 'MastaMindz' link" do
-    click_link 'MastaMindz'
   end
 
   it "has 'GitHub' link" do
