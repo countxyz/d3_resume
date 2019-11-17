@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.6.5'
 
 gem 'sinatra', '~> 1.4.5'
 gem 'rack-coffee', '~> 1.0.3'
