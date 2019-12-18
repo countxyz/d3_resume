@@ -24,7 +24,7 @@ GEM
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
-    rack (1.5.2)
+    rack (1.6.12)
     rack-coffee (1.0.3)
       coffee-script
       rack
