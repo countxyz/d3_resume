@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.6.5'
 
-gem 'sinatra', '~> 1.4.5'
+gem 'sinatra', '~> 2.2.3'
 gem 'rack-coffee', '~> 1.0.3'
 
 gem 'rails_12factor', '~> 0.0.3', group: :production
